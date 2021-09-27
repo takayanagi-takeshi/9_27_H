@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* 全デバイス共通 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* スマホサイズ */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* justify-content: center; */
+}
+
+.box {
+  border: 2px solid black;
+  background-color:lightgray;
+  padding: 5px;
+  margin: 10px;
+  width: 43%;
+  
+}
+
+/* タブレットサイズに変更　768px以上 */
+@media screen and (min-width: 768px) {
+  .box {
+    background-color:red;
+    width: 30%;
+  } 
+}
+
+/* パソコンサイズに変更　1024px以上 */
+@media screen and (min-width: 1024px) {
+  .box {
+    background-color:blue;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+  } 
+}

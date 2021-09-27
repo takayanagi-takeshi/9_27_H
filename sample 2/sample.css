@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* 全デバイス共通 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* スマホサイズ */
+
+.topmenu {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.topmenu i {
+  line-height: 40px;
+  margin-left: 5px;
+}
+
+.map {
+  margin: 6px;
+  margin-left: 20px;
+
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 55px;
+  box-sizing: border-box;
+
+}
+
+.container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.bottommenu {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  /* 文字の位置を調整 */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-top: 5px;
+}
+
+.bottommenu .btn {
+  width: 33.3%;
+  text-align: center;
+  line-height: 12px;
+  padding: 10px;
+}
+
+/* タブレットサイズに変更　768px以上 */
+@media screen and (min-width: 768px) {
+  .bottommenu {
+    display: none;
+  }
+
+  .container {
+    padding-bottom: 0;
+  }
+}
+
+/* パソコンサイズに変更　1024px以上 */
+@media screen and (min-width: 1024px) {
+  .box {
+    background-color:blue;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+  } 
+}
