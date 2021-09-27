@@ -33,6 +33,11 @@ body {
   width: 160px;
 }
 
+.topmenu i {
+  line-height: 40px;
+  margin-left: 10px;
+}
+
 .map {
   margin: 6px;
   margin-left: 20px;
